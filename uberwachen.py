@@ -13,7 +13,7 @@ warnings.filterwarnings("ignore")
 df = pd.read_csv("datasheet_final.csv")
 
 df= df.dropna(axis = 1, how = 'all')
-new_df=df.drop(['weight','height','heart_pulse','muscle_mass','hydration','bone_mass','pulse_wave_velocity',,'systolic','diastolic','TEMP','SPO2'],axis=1)
+new_df=df.drop(['weight','height','heart_pulse','muscle_mass','hydration','bone_mass','pulse_wave_velocity','systolic','diastolic','TEMP','SPO2'],axis=1)
 
 df=new_df.values
 
