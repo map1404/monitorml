@@ -30,7 +30,7 @@ model.compile(optimizer='adam',loss='binary_crossentropy',metrics=['accuracy'])
 model.fit(X_train, Y_train, batch_size=32, epochs=150,)
 
 
-pickle.dump(log_reg,open('model.pkl','wb'))
-model=pickle.load(open('model.pkl','rb'))
+pickle.dump(model,open('dumpfile.pkl','wb'))
+model=pickle.load(open('dumpfile.pkl','rb'))
 
 
