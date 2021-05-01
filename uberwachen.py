@@ -8,6 +8,8 @@ import maths
 
 
 import warnings
+warnings.filterwarnings("ignore")
+
 df = pd.read_csv("datasheet_final.csv")
 
 df= df.dropna(axis = 1, how = 'all')
