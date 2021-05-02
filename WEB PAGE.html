@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Integration</title>
+    <link rel="stylesheet" href="css/uberwachen.css">
+</head>
+<body>
+    <div>
+        <h1 class="main-header">
+            Uberwachen ML Prediction
+        </h1>
+    </div>
+    <div class="row">
+        <form action='/predict' method="post" class="col s12">
+          <div class="row">
+            <div class="input-field col s4">
+                <label for="Diastolic_Bloodpressure"><b>Diastolic Blood Pressure</b></label>
+                <br>
+              <input placeholder="Diastolic Blood Pressure" name="Diastolic Blood Pressure" id="di-bloodpres" type="number" class="validate">
+            </div>
+            <div class="input-field col s4">
+    
+              <label for="Systolic_Bloodpressure"><b>Systolic Blood Pressure</b></label>
+                <br>
+              <input id="sys-bloodpres" name="Systolic Blood Pressure" placeholder="Systolic Blood Pressure"  type="number" class="validate">
+    
+            </div>
+    
+            <div class="input-field col s4">
+                <label for="Temperature"><b>Temperature</b></label>
+                <br>
+              <input id="temp" name="Temperature" placeholder="Temperature in Farenheit" type="number" class="validate">
+    
+            </div>
+            <div class="input-field col s4">
+                <label for="Oxygen_Saturation"><b>Oxygen Saturation</b></label>
+                <br>
+              <input id="oxygensat" name="Oxygen Saturation" placeholder="Oxygen Saturation" type="number" class="validate">
+    
+            </div>
+    
+          </div>
+    
+          <div class="row center">
+    
+              <button type="submit" class="btn-large waves-effect waves-light orange">Predict Probability</button>
+          </div>
+        </form>
+          </div>
+    
+        <br>
+            {{pred}}
+        <br>
+    
+      
+</body>
+</html>

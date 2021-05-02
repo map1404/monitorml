@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="aboutus.css">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Uberwachen</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="About Us.html">About</a>
+          </li>
+					<li class="nav-item">
+						<a class="nav-link" href="patientvitals.html">Patient Input</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+  <br><br>
+   <h1 class="text4">&nbsp;&nbsp;<u><b></b>ABOUT US</b></u></h1><br><br>
+   <h5 class="text3">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Lets meet Hackers of Uberwachen</h5>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">First Hacker</div>
+  <img class="image" src="WhatsApp Image 2021-05-01 at 9.31.33 PM (2).jpeg">
+  <div class="text">Meet Anirudh, an enthusiastic electrical engineer from VIT VELLORE.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">Second Hacker</div>
+  <img class="image" src="WhatsApp Image 2021-05-02 at 7.34.33 AM (1).jpeg" >
+  <div class="text">Meet Ponni, She is currently studying in MS Ramaiah, Bengaluru</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">Third Hacker</div>
+  <img class="image" src="gaurav1.jpeg" >
+  <div class="text">Meet Gaurav, an energetic electronic engineer from VIT CHENNAI  </div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+</script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+</script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+</script>
+
+</body>
+</html> 

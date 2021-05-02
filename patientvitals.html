@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Vitals</title>
+    <link rel="stylesheet" href="css/patientform.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Uberwachen</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="About Us.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="patientvitals.html">Patient Input</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+    <h2 class="header">Patient Vitals Input Form</h2>
+    <div class="container">
+        <form>
+          <label for="fname">Patient First Name</label><br>
+          <input type="text" id="fname" name="firstname" placeholder="Your First Name"><br>
+      
+          <label for="lname">Patient Last Name</label><br>
+          <input type="text" id="lname" name="lastname" placeholder="Your Last name"><br>
+      
+         <label for="docname">Doctor Name</label><br>
+         <input type="text" id="docname" name="docname" placeholder="Name of the Doctor"><br>
+
+         <label for="bloodpres">Blood Pressure</label><br>
+         <input type="number" id="bloodpres" name="bloodpres" placeholder="Blood Pressure"><br>
+
+         <label for="pulserate">Pulse Rate</label><br>
+         <input type="number" id="pulserate" name="pulserate" placeholder="Pulse Rate"><br>
+
+         <label for="oxygensat">Oxygen Saturation</label><br>
+         <input type="number" id="oxygensat" name="oxygensat" placeholder="Oxygen Saturation"><br>
+
+         <label for="temp">Temprature</label><br>
+         <input type="number" id="temp" name="temp" placeholder="Temprature"><br><br>
+
+      
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+ <script src="js/firebase.js"></script>
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+ </script> 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+ </script> 
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+ </script>
+</body>
+</html>
